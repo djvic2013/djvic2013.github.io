@@ -28,20 +28,26 @@ h5
 }
 
 form {
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 
-.notebook 
+iframe {
+    margin: 0px !important;
+    padding: 0px !important;
+    background: blue; /* this is just to make the frames easier to see */
+    border: 0px !important;
+}
+
+h4
 {
-    vertical-align: middle;
     width:200px;
     height:60px;
     padding-top: 10px;
     font-size: 30px;
     color: var(--color_white);
     background-color: var(--sub-color);
-    position: fixed;
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
     margin: 20px;   
