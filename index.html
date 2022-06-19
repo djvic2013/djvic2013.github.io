@@ -1,9 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>My site!</title>       
+        <title>Математика. НМТ-2022</title>
+        <link rel="stylesheet" type="text/css" href="src/style.css">        
+        <script src="src/answer.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1>This is my GitHub Pages website!</h1>        
+        <h3>Козира В.М.</h3>
+        <h1>Математика</h1>
+        <h2>Підсумковий тренажер для підготовки до НМТ–2022</h2>
+        <div class="notebook">Зошит 1</div>
+        <form id="answer_form">
+            <!-- Таблиці тестів -->
+            <div class="container">
+                <div>
+                    <table class="test">
+                        <thead class="testhead">
+                            <tr>
+                                <td></td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="selector"><input type="radio" name="z1" id="z1-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z1" id="z1-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z1" id="z1-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z1" id="z1-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z1" id="z1-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="selector"><input type="radio" name="z2" id="z2-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z2" id="z2-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z2" id="z2-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z2" id="z2-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z2" id="z2-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="selector"><input type="radio" name="z3" id="z3-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z3" id="z3-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z3" id="z3-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z3" id="z3-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z3" id="z3-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">4</td>
+                                <td class="selector"><input type="radio" name="z4" id="z4-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z4" id="z4-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z4" id="z4-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z4" id="z4-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z4" id="z4-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="test">
+                        <thead class="testhead">
+                            <tr>
+                                <td></td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">5</td>
+                                <td class="selector"><input type="radio" name="z5" id="z5-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z5" id="z5-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z5" id="z5-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z5" id="z5-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z5" id="z5-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">6</td>
+                                <td class="selector"><input type="radio" name="z6" id="z6-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z6" id="z6-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z6" id="z6-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z6" id="z6-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z6" id="z6-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">7</td>
+                                <td class="selector"><input type="radio" name="z7" id="z7-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z7" id="z7-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z7" id="z7-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z7" id="z7-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z7" id="z7-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">8</td>
+                                <td class="selector"><input type="radio" name="z8" id="z8-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z8" id="z8-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z8" id="z8-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z8" id="z8-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z8" id="z8-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="test">
+                        <thead class="testhead">
+                            <tr>
+                                <td></td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">9</td>
+                                <td class="selector"><input type="radio" name="z9" id="z9-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z9" id="z9-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z9" id="z9-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z9" id="z9-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z9" id="z9-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">10</td>
+                                <td class="selector"><input type="radio" name="z10" id="z10-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z10" id="z10-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z10" id="z10-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z10" id="z10-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z10" id="z10-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">11</td>
+                                <td class="selector"><input type="radio" name="z11" id="z11-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z11" id="z11-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z11" id="z11-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z11" id="z11-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z11" id="z11-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">12</td>
+                                <td class="selector"><input type="radio" name="z12" id="z12-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z12" id="z12-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z12" id="z12-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z12" id="z12-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z12" id="z12-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="test">
+                        <thead class="testhead">
+                            <tr>
+                                <td></td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">13</td>
+                                <td class="selector"><input type="radio" name="z13" id="z13-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z13" id="z13-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z13" id="z13-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z13" id="z13-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z13" id="z13-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">14</td>
+                                <td class="selector"><input type="radio" name="z14" id="z14-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z14" id="z14-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z14" id="z14-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z14" id="z14-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z14" id="z14-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Таблиці відповідностей -->
+            <div class="container">
+                <div>
+                    <table class="testVidp">
+                        <thead class="testhead">
+                            <tr>
+                                <td class="numVid">15</td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="selector"><input type="radio" name="z15-1" id="z15-1-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-1" id="z15-1-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-1" id="z15-1-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-1" id="z15-1-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-1" id="z15-1-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="selector"><input type="radio" name="z15-2" id="z15-2-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-2" id="z15-2-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-2" id="z15-2-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-2" id="z15-2-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-2" id="z15-2-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="selector"><input type="radio" name="z15-3" id="z15-3-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-3" id="z15-3-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-3" id="z15-3-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-3" id="z15-3-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z15-3" id="z15-3-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="testVidp">
+                        <thead class="testhead">
+                            <tr>
+                                <td class="numVid">16</td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="selector"><input type="radio" name="z16-1" id="z16-1-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-1" id="z16-1-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-1" id="z16-1-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-1" id="z16-1-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-1" id="z16-1-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="selector"><input type="radio" name="z16-2" id="z16-2-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-2" id="z16-2-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-2" id="z16-2-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-2" id="z16-2-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-2" id="z16-2-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="selector"><input type="radio" name="z16-3" id="z16-3-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-3" id="z16-3-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-3" id="z16-3-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-3" id="z16-3-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z16-3" id="z16-3-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="testVidp">
+                        <thead class="testhead">
+                            <tr>
+                                <td class="numVid">17</td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="selector"><input type="radio" name="z17-1" id="z17-1-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-1" id="z17-1-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-1" id="z17-1-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-1" id="z17-1-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-1" id="z17-1-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="selector"><input type="radio" name="z17-2" id="z17-2-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-2" id="z17-2-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-2" id="z17-2-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-2" id="z17-2-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-2" id="z17-2-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="selector"><input type="radio" name="z17-3" id="z17-3-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-3" id="z17-3-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-3" id="z17-3-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-3" id="z17-3-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z17-3" id="z17-3-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="testVidp">
+                        <thead class="testhead">
+                            <tr>
+                                <td class="numVid">18</td>
+                                <td>A</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="selector"><input type="radio" name="z18-1" id="z18-1-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-1" id="z18-1-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-1" id="z18-1-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-1" id="z18-1-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-1" id="z18-1-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="selector"><input type="radio" name="z18-2" id="z18-2-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-2" id="z18-2-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-2" id="z18-2-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-2" id="z18-2-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-2" id="z18-2-5" class="radiotest"></td>                    
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="selector"><input type="radio" name="z18-3" id="z18-3-1" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-3" id="z18-3-2" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-3" id="z18-3-3" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-3" id="z18-3-4" class="radiotest"></td>
+                                <td class="selector"><input type="radio" name="z18-3" id="z18-3-5" class="radiotest"></td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Завдання 19-20 -->
+            <div class="container">
+                <div>
+                    <table class="test">
+                            <tr>
+                                <td class="numVid">19</td>
+                                <td class="textVidp"><input type="text" id="z19-1" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z19-2" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z19-3" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z19-4" class="coltext" maxlength="1"></td>
+                                <td class="textVidpComm" style="width: 10px;">,</td>
+                                <td class="textVidp"><input type="text" id="z19-5" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z19-6" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z19-7" class="coltext" maxlength="1"></td>
+                                
+                            </tr>
+                        </table>
+                </div>
+                <div>
+                    <table class="test">
+                            <tr>
+                                <td class="numVid">20</td>
+                                <td class="textVidp"><input type="text" id="z20-1" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z20-2" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z20-3" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z20-4" class="coltext" maxlength="1"></td>
+                                <td class="textVidpComm" style="width: 10px;">,</td>
+                                <td class="textVidp"><input type="text" id="z20-5" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z20-6" class="coltext" maxlength="1"></td>
+                                <td class="textVidp"><input type="text" id="z20-7" class="coltext" maxlength="1"></td>
+                                
+                            </tr>
+                        </table>
+                </div>                
+            </div>
+            <div>
+                <input type="submit" class="check" id="submit" value="Перевірка">                
+            </div>
+        </form>
+
+        <h5 id="answertext"></h5>
+
+        
     </body>
 </html>
