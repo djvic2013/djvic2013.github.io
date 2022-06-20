@@ -1,20 +1,6 @@
-//Масив відповідей
-var ans_arr = {
-    "ans-1": 3,   "ans-2": 2,   "ans-3": 2,   "ans-4": 3, 
-    "ans-5": 2,   "ans-6": 4,   "ans-7": 4,   "ans-8": 5, 
-    "ans-9": 3,   "ans-10": 4,  "ans-11": 5,  "ans-12": 1, 
-    "ans-13": 5,  "ans-14": 3, 
-    
-    "ans-15-1": 2,    "ans-15-2": 1,    "ans-15-3": 3, 
-    "ans-16-1": 2,    "ans-16-2": 1,   "ans-16-3": 4,
-    "ans-17-1": 1,    "ans-17-2": 2,    "ans-17-3": 4, 
-    "ans-18-1": 1,    "ans-18-2": 5,    "ans-18-3": 3,
-    
-    "ans-19": -7.2,   "ans-20": 26
-};
-
 var point = 0;
 var mark12 = 0;
+var ans_arr = ans_arr[book]
 
 //Функція перевірки тестів
     
@@ -28,6 +14,9 @@ function checkTest(object, answer) {
         document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "red");
     } 
 }
+
+
+
 
 
 
@@ -121,7 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //document.querySelector('#submit').disabled = true;
 
     document.querySelector('form').onsubmit = () => {
-                
+
+                      
         //Перевірка тестів 1-14
         checkTest('z1', 'ans-1');
         checkTest('z2', 'ans-2');
@@ -179,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.querySelector('#submit').setAttribute("class", "none");
 
-        document.querySelector('#answertext').innerHTML = '<p>Рейтингова оцінка: '+point+'</p><p>Оцінка за 12-бальною шкалою: '+mark12+'</p>';
+        document.querySelector('#answertext').innerHTML = '<p>Рейтингова оцінка: '+point+'</p><p>Оцінка за 12-бальною шкалою: '+mark12+'</p>';        
         
         
         readonlyForm();
