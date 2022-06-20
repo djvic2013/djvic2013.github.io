@@ -1,5 +1,6 @@
 var point = 0;
 var mark12 = 0;
+var mark100200 = 0;
 var ans_arr = ans_arr[book]
 
 //Функція перевірки тестів
@@ -14,10 +15,6 @@ function checkTest(object, answer) {
         document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "red");
     } 
 }
-
-
-
-
 
 
 //Функція перетворення відповіді 19-20 в масив з 7 елементів
@@ -94,6 +91,8 @@ function checkNumeric(theObject1, theObject2, theObject3, theObject4, theObject5
     }
 }
 
+
+//Блокуємо форму
 function readonlyForm() {
     var inputs, index;
     inputs = document.getElementsByTagName('input');
@@ -149,27 +148,61 @@ document.addEventListener('DOMContentLoaded', function() {
         checkNumeric('z19-1', 'z19-2', 'z19-3', 'z19-4', 'z19-5', 'z19-6', 'z19-7', ans_arr['ans-19']);
         checkNumeric('z20-1', 'z20-2', 'z20-3', 'z20-4', 'z20-5', 'z20-6', 'z20-7', ans_arr['ans-20']);
     
-        point = Math.round(100*(1+point/30));
+        //point = Math.round(100*(1+point/30));
+
     
           
         //Значення за 12-бальною шкалою
-        if (point >= 100 && point <= 105) mark12 = 1;
-        if (point >= 106 && point <= 110) mark12 = 2;
-        if (point >= 111 && point <= 115) mark12 = 3;
-        if (point >= 116 && point <= 125) mark12 = 4;
-        if (point >= 126 && point <= 135) mark12 = 5;
-        if (point >= 136 && point <= 145) mark12 = 6;
-        if (point >= 146 && point <= 152) mark12 = 7;
-        if (point >= 153 && point <= 162) mark12 = 8;
-        if (point >= 163 && point <= 172) mark12 = 9;
-        if (point >= 173 && point <= 182) mark12 = 10;
-        if (point >= 183 && point <= 192) mark12 = 11;
-        if (point >= 193 && point <= 200) mark12 = 12;
+        //if (point >= 100 && point <= 105) mark12 = 1;
+        //if (point >= 106 && point <= 110) mark12 = 2;
+        //if (point >= 111 && point <= 115) mark12 = 3;
+        //if (point >= 116 && point <= 125) mark12 = 4;
+        //if (point >= 126 && point <= 135) mark12 = 5;
+        //if (point >= 136 && point <= 145) mark12 = 6;
+        //if (point >= 146 && point <= 152) mark12 = 7;
+        //if (point >= 153 && point <= 162) mark12 = 8;
+        //if (point >= 163 && point <= 172) mark12 = 9;
+        //if (point >= 173 && point <= 182) mark12 = 10;
+        //if (point >= 183 && point <= 192) mark12 = 11;
+        //if (point >= 193 && point <= 200) mark12 = 12;
+
+        //Значення за шкалою 100-200
+        if (point == 0) mark100200 = 0;
+        if (point == 1) mark100200 = 100;
+        if (point == 2) mark100200 = 110;
+        if (point == 3) mark100200 = 118;
+        if (point == 4) mark100200 = 125;
+        if (point == 5) mark100200 = 128;
+        if (point == 6) mark100200 = 131;
+        if (point == 7) mark100200 = 134;
+        if (point == 8) mark100200 = 136;
+        if (point == 9) mark100200 = 138;
+        if (point == 10) mark100200 = 140;
+        if (point == 11) mark100200 = 142;
+        if (point == 12) mark100200 = 144;
+        if (point == 13) mark100200 = 146;
+        if (point == 14) mark100200 = 148;
+        if (point == 15) mark100200 = 149;
+        if (point == 16) mark100200 = 150;
+        if (point == 17) mark100200 = 151;
+        if (point == 18) mark100200 = 152;
+        if (point == 19) mark100200 = 154;
+        if (point == 20) mark100200 = 156;
+        if (point == 21) mark100200 = 159;
+        if (point == 22) mark100200 = 162;
+        if (point == 23) mark100200 = 165;
+        if (point == 24) mark100200 = 168;
+        if (point == 25) mark100200 = 172;
+        if (point == 26) mark100200 = 176;
+        if (point == 27) mark100200 = 180;
+        if (point == 28) mark100200 = 185;
+        if (point == 29) mark100200 = 192;
+        if (point == 30) mark100200 = 200;
     
 
         document.querySelector('#submit').setAttribute("class", "none");
 
-        document.querySelector('#answertext').innerHTML = '<p>Рейтингова оцінка: '+point+'</p><p>Оцінка за 12-бальною шкалою: '+mark12+'</p>';        
+        document.querySelector('#answertext').innerHTML = '<p>Тестовий бал: '+point+'</p><p>Бал за шкалою 100-200: '+mark100200+'</p>';
         
         
         readonlyForm();
