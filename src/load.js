@@ -22,6 +22,6 @@ var book = getUrlParameter('book');
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#book_id').innerHTML = 'Зошит '+book;
     //document.querySelector('#book_pdf').innerHTML = '<iframe src="src/'+book+'.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0" frameborder=0 allowfullscreen  width=100% height=700px></iframe>';
-    document.querySelector('#book_pdf').innerHTML = '<embed src="src/'+book+'.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0" frameborder=0 allowfullscreen  width=1200 height=700px type="application/pdf">';
+    document.querySelector('#book_pdf').innerHTML = '<embed src="src/'+book+'.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0&scrollbar=0" frameborder=0 allowfullscreen  width=1200 height=700px type="application/pdf">';
     return false;
 });
