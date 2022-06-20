@@ -196,13 +196,14 @@ h3
 
 
 footer { 
+    border-top: 1px solid var(--color-white);
     height: 60px;
     width: 100%;
     background: var(--sub-color); 
     position: fixed;
     top: calc(100% - 40px);
     font-size: 12px;
-    color: var(--color_white);
+    color: var(--color-white);
     text-decoration: none;    
 }
 
