@@ -52,6 +52,7 @@ svg:hover
 
 body {
     justify-content: center;
+    width: 100%;
     align-items: center;
     height: 100vh;
     background: var(--main-color);
@@ -60,7 +61,7 @@ body {
     color: var(--color-white);
     font-size: 1.5em; 
     text-align: center; 
-    /* new */
+    
         
 }
 
@@ -104,16 +105,16 @@ h2
 
 h4
 {
-    position: relative;
-    width:200px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height:60px;
-    padding-top: 10px;
+    padding: 10px 20px;
     font-size: 30px;
     color: var(--color-white);
     background-color: var(--sub-color);
-    left: 50%;
-    transform: translate(-50%, 0%);
-    margin: 20px;   
+    text-align: center;    
     border-radius: 10px;
     border-color: var(--color-white);
     border-width: 2px;
