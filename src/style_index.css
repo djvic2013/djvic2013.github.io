@@ -214,6 +214,7 @@ footer {
     margin-top: 20px;
     color: var(--color-white);
     text-decoration: none;    
+    box-shadow: 0 0 35px var(--color-white);
     z-index: 1;
 }
 
@@ -237,7 +238,8 @@ header {
     position: fixed;
     font-size: 12px;
     color: var(--color-white);
-    text-decoration: none;    
+    text-decoration: none; 
+    box-shadow: 0 0 35px var(--color-white);   
     z-index: 1;
 }
 
