@@ -79,7 +79,7 @@ h5
 
 
 form {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 
@@ -294,6 +294,16 @@ td
     background-color:var(--main-color);
     color:var(--color-white);
     border-color: var(--color-white);
+}
+
+.change 
+{
+    letter-spacing: 0.1em;
+    font-weight: unset;
+    border: 0px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 

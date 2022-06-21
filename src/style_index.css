@@ -57,7 +57,7 @@ h4
 span 
 {
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 
 
@@ -75,10 +75,10 @@ div
     background: var(--main-color);
     color:var(--color-white);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-align: center;
     vertical-align: middle;
-    width: 240px;
+    width: 180px;
     letter-spacing: 0.1em;
     padding: 10px;
     transition: 1s;    
@@ -211,6 +211,7 @@ footer {
     background: var(--sub-color); 
     position: fixed;
     font-size: 12px;
+    margin-top: 20px;
     color: var(--color-white);
     text-decoration: none;    
     z-index: 1;
