@@ -25,7 +25,6 @@ body {
     text-align: center; 
     left: 50%;
     right: 50%;
-  /* bring your own prefixes */
   
 }
 
@@ -74,7 +73,7 @@ h5
     vertical-align: middle;
     padding-left: 35px;
     text-indent: -35px;
-    font-size: 25px;
+    font-size: 100%;
 }
 
 .variant_add
@@ -85,7 +84,7 @@ h5
     vertical-align: middle;
     padding-left: 20px;
     text-indent: -20px;
-    font-size: 25px;
+    font-size: 100%;
 }
 
 .zavd_end
@@ -130,7 +129,7 @@ h2
     padding-top: 30px;
     color: var(--main-color);
     font-style: italic;
-    font-size: 100%;
+    font-size: 110%;
     font-weight: normal;
 }
 
