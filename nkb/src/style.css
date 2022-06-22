@@ -328,7 +328,12 @@ td
     accent-color: red;
 }
 
-.variant > .red, .green
+.variant > .red
+{
+    margin-right: 15px;
+}
+
+.variant > .green
 {
     margin-right: 15px;
 }
