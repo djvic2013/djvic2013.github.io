@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: Calibri, sans-serif;
     --main-color: #fe794e;
     --sub-color: #46525d;
     --color-white: #fff;
@@ -42,6 +42,8 @@ h1
 {
     font-size: 180%;
 }
+
+
 h5 
 {
     font-size: 150%;
@@ -67,8 +69,7 @@ tab1
     padding-left: 20px;
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 20px;
-    
+    margin-left: 20px;    
     text-align: left;
     margin-bottom: 6px;
 }
@@ -81,6 +82,7 @@ tab1
     vertical-align: middle;
     padding-left: 20px;
     text-indent: -20px;
+    font-size: 100%;
 }
 
 .zavd_end
@@ -88,8 +90,8 @@ tab1
     text-align: left;
     margin-bottom: 10px;
     margin-left: 40px;
-
     vertical-align: middle;
+    font-size: 100%;
 }
 
 .zavd_end_italic
@@ -100,10 +102,12 @@ tab1
     font-style: italic;
     margin-left: 40px;
     vertical-align: middle;
+    font-size: 100%;
 }
 
 .paragraph
 {
+    font-size: 100%;
     text-align: left;
     margin-bottom: 10px;
     margin-left: 40px;
@@ -116,6 +120,7 @@ h3
 {
     font-weight: normal;
     margin-top: 20px;
+    font-size: 100%;
 }
 
 h2 
@@ -123,6 +128,7 @@ h2
     padding-top: 30px;
     color: var(--main-color);
     font-style: italic;
+    font-size: 120%;
     font-weight: normal;
 
 }
@@ -189,8 +195,7 @@ td
 
 .selector 
 {
-    align-items: center;
-    
+    text-justify: center;    
     vertical-align: middle;
     border-radius: 10%;
     border: 2px dashed var(--sub-color);
@@ -270,7 +275,7 @@ td
     border-width: 2px;
     border-radius: 5px;
     text-align: center;
-    font-size: 17px;
+    font-size: 100%;
     margin-bottom: 0px;
 }
 
@@ -306,8 +311,6 @@ td
     box-shadow:0 0 8px 4px var(--sub-white) inset;
     border: 2px solid var(--color-white);
     border-radius: 50%;
-    margin-right: 10px;
-    
     accent-color: var(--main-color);    
     display:inline-block;
 }
@@ -321,6 +324,15 @@ td
     border-radius:50%;
     background-color: var(--sub-color);
 }
+
+
+
+
+.variant > .radiotest
+{
+    margin-right: 15px;
+}
+
 
 .red
 {
