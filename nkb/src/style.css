@@ -58,6 +58,7 @@ h5
 {
     
     text-align: left;
+    font-size: 100%;
 }
 
 .zavd
@@ -68,6 +69,7 @@ h5
     margin-left: 20px;    
     text-align: left;
     margin-bottom: 6px;
+    font-size: 100%;
 }
 
 .variant
