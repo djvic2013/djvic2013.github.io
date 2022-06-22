@@ -48,7 +48,8 @@ svg
     border-radius: 4px;
     margin-top: 3px;
     border: 2px var(--color-white) solid;
-    background-color: var(--sub-color);
+    background: linear-gradient(to left, var(--color-white) 50%, var(--sub-color) 50%) right;
+    background-size: 200%;
     z-index: 1;
 }
 
@@ -87,7 +88,7 @@ form {
 iframe {
     margin: 0px !important;
     padding: 0px !important;
-    background: blue; /* this is just to make the frames easier to see */
+    background: var(--main-color);
     border: 0px !important;
 }
 
@@ -134,11 +135,6 @@ h4
 .container > div {
     margin: 0px;
     padding: 0px;
-}
-
-.container > div:hover {
-    background-color: var(--sub-color);
-
 }
 
 .test 
