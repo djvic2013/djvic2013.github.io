@@ -131,11 +131,13 @@ h2
 
 
 .container {
-    display: flex;          
+    display: flex;   
+    flex-wrap: wrap;       
 }
 
 .container > div {
     flex: 1;
+    min-width: 400px;
     margin: 0px;
     padding: 0px;
 }
