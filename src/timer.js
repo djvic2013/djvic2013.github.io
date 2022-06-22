@@ -1,7 +1,12 @@
 var totalsec = 2400;
+if (!localStorage.getItem('value')) {
+    localStorage.setItem('value', 0);
+}
 
 function changeValue() {
+    let value = localStorage.getItem('value');
     var sec = totalsec-(value++);
+    
     document.getElementById("timer_clock").innerHTML =  convertHMS(sec);
     if (sec < 60) {
         document.getElementById("timer_clock").style.color = 'red';        
@@ -13,6 +18,7 @@ function changeValue() {
         document.getElementById("submit").click();
         alert('Час вийшов!\nТестовий бал: '+point+'\nБал за шкалою 100-200: '+mark100200);
     }
+    localStorage.setItem('value', value)
 }
 
 function convertHMS(value) {
@@ -31,7 +37,9 @@ var timerInterval = null;
 
 window.onload = function() {
     value = 0;
+    
     timerInterval = setInterval(changeValue, 1000);  
+    
 };
 
 var stop = function() {
