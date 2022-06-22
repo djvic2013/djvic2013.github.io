@@ -30,7 +30,7 @@ a
 {
     color: var(--color-white);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 0.9em;
     letter-spacing: 0.1em;
 }
 
@@ -172,7 +172,7 @@ table
 ul {
     list-style: disc inside none;
     text-align: left;
-    font-size: 20px;
+    font-size: 0.8em;
     margin: 0px 40px 10px 40px;
 }
 
