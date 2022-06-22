@@ -2,10 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    --main-color: #889cd7;
-    --sub-color: #22346b;
-    --color-white: #eee;
+    font-family: Helvetica, sans-serif;
+    --main-color: #fe794e;
+    --sub-color: #46525d;
+    --color-white: #fff;
     color: var(--sub-color);
     font-size: 25px;
     
@@ -17,7 +17,7 @@ body {
     width: 100%;
     align-items: center;
     height: 100vh;
-    background: var(--main-color);
+    background: var(--color-white);
     padding: 50px;
     gap: 60px;
     font-size: 1.5em; 
@@ -121,6 +121,7 @@ h3
 h2 
 {
     padding-top: 30px;
+    color: var(--main-color);
     font-style: italic;
     font-weight: normal;
 
@@ -131,13 +132,20 @@ h2
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    flex: 3 1 0%;
 
 }
 
 .container > div {
-    width: 50%;
+    width: 50%;    
     margin: 0px;
     padding: 0px;
+
+}
+
+.table
+{
+    width:250px
 }
 
 
@@ -191,7 +199,7 @@ td
 
 .selector:hover
 {
-    background-color: var(--color-white);
+    background-color: var(--main-color);
 }
 
 
@@ -268,7 +276,7 @@ td
 
 .check:hover 
 {
-    background-color:var(--sub-color);
+    background-color:var(--main-color);
     color:var(--color-white);
     border-color: var(--color-white);
 }
