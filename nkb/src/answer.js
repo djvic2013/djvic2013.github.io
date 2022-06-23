@@ -12,7 +12,9 @@ function checkTest(object, answer) {
         point++;
     } else {
         document.getElementsByName(object)[ans_arr[answer]-1].checked = true;
-        document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "red");
+        document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "radiotest_empty");
+        //document.getElementsByName(object)[num].prop('checked') = true;
+        //document.getElementsByName(object)[num].setAttribute("class", "radiotest");
     } 
 }
 
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.querySelector('#submit').setAttribute("class", "none");
 
-        document.querySelector('#answertext').innerHTML = '<p>Тестовий бал: '+point+'</p>';
+        document.querySelector('#answertext').innerHTML = '<p>Набрано балів: '+point+' з 35.</p>';
         
         
         readonlyForm();      
