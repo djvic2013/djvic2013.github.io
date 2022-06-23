@@ -48,7 +48,7 @@ svg
     border-radius: 4px;
     margin-top: 3px;
     border: 2px var(--color-white) solid;
-    background: linear-gradient(to left, var(--color-white) 50%, var(--sub-color) 50%) right;
+    background: linear-gradient(to left, var(--sub-color) 50%, var(--sub-color) 50%) right;
     background-size: 200%;
     z-index: 1;
 }
