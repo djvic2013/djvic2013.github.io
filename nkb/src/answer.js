@@ -11,10 +11,15 @@ function checkTest(object, answer) {
         document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "green");
         point++;
     } else {
-        document.getElementsByName(object)[ans_arr[answer]-1].checked = true;
-        document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "radiotest_empty");
-        //document.getElementsByName(object)[num].prop('checked') = true;
-        //document.getElementsByName(object)[num].setAttribute("class", "radiotest");
+        //Правильна віповідь зеленим; де є помилка - червоним правильний.
+        //document.getElementsByName(object)[ans_arr[answer]-1].checked = true;
+        //document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "red");
+
+        //Правильна віповідь зеленим, неправильна - червоним. 
+        //document.getElementsByName(object)[num].checked != true;
+        //document.getElementsByName(object)[num].setAttribute("class", "red");
+
+        //document.getElementsByName(object)[ans_arr[answer]-1].setAttribute("class", "red")
     } 
 }
 

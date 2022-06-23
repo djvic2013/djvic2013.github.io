@@ -7,10 +7,7 @@
     --sub-color: #46525d;
     --color-white: #fff;
     color: var(--sub-color);
-    
-    
 }
-
 
 body {
     
@@ -23,7 +20,6 @@ body {
     text-align: center; 
     left: 50%;
     right: 50%;
-  
 }
 
 form
@@ -34,6 +30,32 @@ form
     max-width: 1200px;
     padding: 40px;  
     padding-top: 0px;
+}
+
+.website-counter 
+{
+    width: 90px;
+    position: fixed;
+    top: 35px;
+    left: 10px;
+    text-align: center;
+    font-size: 70%;
+    color: var(--color-white);
+    padding: 5px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-top: 3px;
+    border: 5px var(--color-white) solid;
+    background: linear-gradient(to left, var(--sub-color) 50%, var(--sub-color) 50%) right;
+    background-size: 200%;
+    z-index: 1;
+}
+
+.num_user
+{
+    color: var(--main-color);
+    font-size: 120%;
+    font-weight: bold;
 }
 
 h1 
