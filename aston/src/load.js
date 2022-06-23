@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (navigator.appVersion.indexOf("Win") != -1) {
             document.querySelector('#book_pdf').innerHTML = '<iframe id="iframe_pdf" src="src/'+book+'.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0" frameborder=0 allowfullscreen  width='+screen_width+' height=700px></iframe>';
-        }  else {
+        } else {
             document.querySelector('#book_pdf').innerHTML = google_pdf(book, screen_width);
         }
         
