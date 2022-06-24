@@ -96,7 +96,7 @@ div
 
 .book span {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .book i {
@@ -210,7 +210,7 @@ footer {
     color: var(--color-white);
     text-decoration: none;    
     box-shadow: 0 0 35px var(--color-white);
-    z-index: 1;
+    z-index: 0;
 }
 
 .footer_text 
@@ -293,5 +293,56 @@ header {
 
 .block 
 {
-    padding-bottom: 90px;
+    padding-bottom: 100px;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--sub-color);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    margin-bottom: -2px;
+    display: inline-block;
+  }
+
+  .dotr {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    margin-bottom: -2px;
+    display: inline-block;
+  }
+
+  .dotg {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    margin-bottom: -2px;
+    display: inline-block;
+  }
+
+
+.carousel {
+    overflow: auto;
+    margin : 0 auto;
+    white-space: nowrap;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.img_book {
+    display: inline-block;  
+    border: 2px solid var(--sub-color);
+    height: 200px;
+}
+
+.img_book:hover {
+    box-shadow: 0 0 35px var(--sub-color);
 }
