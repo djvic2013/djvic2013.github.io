@@ -36,7 +36,7 @@ function convertHMS(value) {
 var timerInterval = null;
 
 window.onload = function() {
-    value = 0;
+    localStorage.setItem('value', 0);
     
     timerInterval = setInterval(changeValue, 1000);  
     

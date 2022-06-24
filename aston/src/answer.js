@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (check_radio < 28) {
             alert('Введіть відповіді до усіх задач!');
         } else {
+            localStorage.setItem('value', 0);
             //Перевірка тестів 1-14
             checkTest('z1', 'ans-1');
             checkTest('z2', 'ans-2');
