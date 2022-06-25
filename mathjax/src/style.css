@@ -6,7 +6,7 @@
     --main-color: #7e8392;
     --sub-color: #666a76;
     --color-white: #eee;
-    color: var(--sub-color);
+    color: var(--sub-color);    
 }
 
 body {
@@ -105,7 +105,7 @@ h5
     float: right;
     margin-top: 10px;
     margin-left: 10px;
-    width:16%;
+    width:20%;
   }
 
 .div_img 
@@ -294,8 +294,7 @@ td
 .textVidp
 {
     background-color:var(--color-white);
-    border-style: dotted;
-    border-color:var(--sub-color);
+    border: 2px dashed var(--sub-color);
     vertical-align: middle;
     justify-content: center;
     border-width: 2px;
