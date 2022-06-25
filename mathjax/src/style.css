@@ -1,0 +1,517 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    --main-color: #7e8392;
+    --sub-color: #666a76;
+    --color-white: #eee;
+    color: var(--sub-color);
+}
+
+body {
+    
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    background: var(--color-white);
+    gap: 60px;
+    font-size: 20px;
+    text-align: center; 
+    left: 50%;
+    right: 50%;
+}
+
+form
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 1200px;
+    padding: 40px;  
+    padding-top: 0px;
+}
+
+.website-counter 
+{
+    position: fixed;
+    top: 28px;
+    left: 10px;
+    text-align: center;
+    font-size: 70%;
+    color: var(--color-white);
+    padding: 5px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-top: 3px;
+    border: 5px var(--color-white) solid;
+    background: linear-gradient(to left, var(--sub-color) 50%, var(--sub-color) 50%) right;
+    background-size: 200%;
+    z-index: 1;
+}
+
+.num_user
+{
+    color: var(--main-color);
+    font-size: 120%;
+    font-weight: bold;
+}
+
+h1 
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 180%;
+}
+
+h4
+{
+    position:relative;
+    padding-top: 00px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.author 
+{
+    margin-top: 90px;
+}
+
+h5 
+{
+    font-size: 150%;
+    text-align: center;
+    margin: 10px;
+}
+
+.text 
+{
+    text-align: left;
+    font-size: 100%;
+}
+
+.zavd
+{
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;    
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 100%;
+}
+
+.img_zavd {
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    width:16%;
+  }
+
+.div_img 
+{
+    vertical-align: top;
+    word-wrap: normal;
+}
+.variant
+{
+    text-align: left;
+    margin-bottom: 3px;
+    margin-left: 40px;
+    vertical-align: middle;
+    padding-left: 40px;
+    text-indent: -40px;
+    font-size: 100%;
+}
+
+.variant_add
+{
+    text-align: left;
+    margin-bottom: 3px;
+    margin-left: 40px;
+    vertical-align: middle;
+    padding-left: 20px;
+    text-indent: -20px;
+    font-size: 100%;
+}
+
+.zavd_end
+{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.zavd_end_italic
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-style: italic;
+    margin-left: 40px;
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.paragraph
+{
+    font-size: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+
+ol ::marker {
+    font-weight: bold;
+}
+
+h3 
+{
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 100%;
+}
+
+h2 
+{
+    padding-top: 30px;
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 110%;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;   
+    flex-wrap: wrap;       
+}
+
+.container > div {
+    flex: 1;
+    min-width: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container > .table
+{
+    flex: 0 300px;
+}
+
+
+.test 
+{
+    border-spacing: 5px;
+    margin: 5px;    
+}
+
+
+.testVidp 
+{
+    border-spacing: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    column-span: all;
+    
+}
+
+.testhead {
+    background: none;
+    padding: 2px;
+}
+
+td 
+{
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+.num 
+{
+    width: 50px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.selector 
+{
+    text-justify: center;    
+    vertical-align: middle;
+    border-radius: 10%;
+    border: 2px dashed var(--sub-color);
+    
+}
+
+.coltext
+{
+    height: 25px;
+    width: 25px;
+    border-width:0px;
+    border:none;
+    outline:none;
+    text-align: center;
+    color: var(--sub-color);
+    font-size: 20px;
+    background-color:var(--color-white);
+}
+
+.textgreen
+{
+    height: 25px;
+    width: 25px;
+    border-width:0px;
+    border:none;
+    outline:none;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    background-color:var(--color-white);
+}
+
+.textred
+{
+    height: 25px;
+    width: 25px;
+    border-width:0px;
+    border:none;
+    outline:none;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    background-color:var(--color-white);
+}
+
+.textVidp
+{
+    background-color:var(--color-white);
+    border-style: dotted;
+    border-color:var(--sub-color);
+    vertical-align: middle;
+    justify-content: center;
+    border-width: 2px;
+    border-radius: 20%;
+    margin: 0;
+    padding: 0;    
+}
+
+.textVidpComm 
+{
+    background-color: transparent;
+}
+
+.check
+{
+    margin-top: 10px;
+    padding: 10px;
+    background-color:var(--color-white);
+    vertical-align: middle;
+    justify-content: center;
+    border-width: 2px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 0px;
+}
+
+.check:hover 
+{
+    background-color:var(--main-color);
+    border-radius: 5px;
+    border-width: 2px;
+    color:var(--color-white);
+    border-style: solid;
+    border-color: var(--main-color);
+}
+
+
+.check:disabled:hover 
+{
+    background-color:var(--main-color);
+    color:var(--color-white);
+    border-color: var(--color-white);
+}
+
+.change 
+{
+    font-weight: unset;
+    font-size: 100%;
+    font-weight: bold;
+    color: var(--sub-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.radiotest {
+    -webkit-appearance:none;
+    height: 20px;
+    width: 20px;
+    font-size: 100%;
+    border: 2px solid;
+    border-radius: 50%;
+    display:inline-block;
+    margin-bottom: -4px;
+}
+
+.radiotest:checked
+{
+    -webkit-appearance:none;
+    background-color: var(--main-color);
+}
+
+.variant > .radiotest
+{
+    margin-right: 15px;
+}
+
+.red
+{
+    height: 20px;
+    width: 20px;
+    accent-color:var(--color-white);
+    border-radius: 50%;
+    accent-color: red;
+}
+
+.variant > .red
+{
+    margin-right: 15px;
+}
+
+.variant > .green
+{
+    margin-right: 15px;
+}
+
+.variant > .radiotest_empty
+{
+    margin-right: 15px;
+}
+
+.red:disabled,
+.red[disabled=disabled]
+{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border: 2px solid red;
+    border-radius:50%;
+    background-color: red;
+    margin-bottom: -4px;
+}
+
+.green:disabled,
+.green[disabled=disabled]
+{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border:2px solid green;
+    border-radius:50%;
+    background-color: green;
+    margin-bottom: -4px;    
+}
+
+.radiotest_empty:disabled,
+.radiotest_empty[disabled=disabled]
+{
+    -webkit-appearance:none;
+    height: 20px;
+    width: 20px;
+    font-size: 100%;
+    border: 2px solid;
+    border-radius: 50%;
+    display:inline-block;
+    margin-bottom: -4px; 
+}
+
+.none
+{
+    display: none;
+}
+
+#answertext 
+{
+    padding-bottom: 10px;
+}
+
+
+header { 
+    position:absolute;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;    
+    top:0;
+    width:100%;
+    height:70px;
+    background: var(--main-color); 
+    position: fixed;
+    font-size: 100%;
+    color: var(--color-white);
+    z-index: 1;
+}
+
+header img{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.link_book
+{
+    padding-left: 20px;
+    padding-right: 20px;    
+    left: auto;
+    right: auto;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    place-items: center;
+    justify-content: center;    
+}
+
+.link_book img
+{
+    width: 200px;
+    margin: 0px 10px 80px 10px;
+    border: 2px solid var(--main-color);
+}
+
+
+footer { 
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;   /* Height of the footer */
+    padding-top: 25px;
+    background: var(--main-color); 
+    position: fixed;
+    font-size: 80%;
+    font-weight: normal;
+    color: var(--color-white);
+    
+}
+
+footer img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer a{
+    
+    text-decoration: none;
+    color: var(--color-white);
+    margin-right: 40px;
+    
+}
