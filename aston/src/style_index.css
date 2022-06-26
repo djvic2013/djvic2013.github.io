@@ -330,7 +330,6 @@ header {
 
 
   .book_author {
-    position: relative;
     background: var(--main-color);
     width: 180px;    
     padding: 5px;
