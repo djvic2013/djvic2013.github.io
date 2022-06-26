@@ -105,7 +105,8 @@ h5
     float: right;
     margin-top: 10px;
     margin-left: 10px;
-    width:20%;
+    
+    max-height: 150px;
   }
 
 .div_img 
