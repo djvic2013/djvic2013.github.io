@@ -105,9 +105,18 @@ h5
     float: right;
     margin-top: 10px;
     margin-left: 10px;
-    
-    max-height: 150px;
+    max-width: 19%;
+    max-height: 20%;
   }
+
+.img_zavd_err {
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-height: 150px;
+}
+
+  
 
 .div_img 
 {
