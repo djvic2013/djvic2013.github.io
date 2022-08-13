@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.3aba7e30.css",
-    "main.js": "./static/js/main.3f830ba2.js",
+    "main.css": "./static/css/main.8b65733d.css",
+    "main.js": "./static/js/main.48f09f47.js",
     "static/media/fon.jpg": "./static/media/fon.316f99d468625a950d40.jpg",
     "static/media/Poland-map.png": "./static/media/Poland-map.0b6b4daae95d3826df22.png",
     "static/media/flag.png": "./static/media/flag.e9ba6c1fab956e89a0da.png",
     "index.html": "./index.html",
-    "main.3aba7e30.css.map": "./static/css/main.3aba7e30.css.map",
-    "main.3f830ba2.js.map": "./static/js/main.3f830ba2.js.map"
+    "main.8b65733d.css.map": "./static/css/main.8b65733d.css.map",
+    "main.48f09f47.js.map": "./static/js/main.48f09f47.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aba7e30.css",
-    "static/js/main.3f830ba2.js"
+    "static/css/main.8b65733d.css",
+    "static/js/main.48f09f47.js"
   ]
 }
